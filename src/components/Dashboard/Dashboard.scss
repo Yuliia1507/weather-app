@@ -1,0 +1,29 @@
+.dashboard {
+	padding-block-start: 40px;
+	padding-block-end: 63px;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		gap: 55px;
+		margin-bottom: 50px;
+		@media (max-width: 1300px) {
+			gap: 20px;
+		}
+		@media (max-width: 1240px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+		@media (max-width: 1300px) {
+			gap: 20px;
+		}
+		@media (max-width: 1240px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

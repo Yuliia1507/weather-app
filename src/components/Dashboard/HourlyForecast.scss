@@ -1,0 +1,86 @@
+.hourly-forecast {
+	max-width: 870px;
+	width: 100%;
+	box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	background: var(--card-bg);
+	padding: 30px 20px;
+
+	@media (max-width: 1270px) {
+		max-width: 100%;
+	}
+	&__title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: var(--text);
+			@media (max-width: 400px) {
+		font-size: 25px;
+	}
+	}
+	&__wrapper {
+		max-width: 710px;
+		margin-inline: auto;
+		width: 100%;
+		display: flex;
+		gap: 15px;
+		overflow-x: auto;
+		padding-bottom: 10px;
+		width: 100%;
+		scroll-snap-type: x mandatory;
+	}
+
+	&__item {
+		padding: 13px;
+		border-radius: 40px;
+		min-height: 270px;
+		display: grid;
+		place-items: center;
+		gap: 5px;
+		color: var(--text);
+		font-size: 24px;
+		font-weight: 700;
+		flex: 0 0 auto;
+		min-width: 130px;
+		scroll-snap-align: start;
+				@media (max-width: 400px) {
+		font-size: 18px;
+	}
+	}
+
+	// .hourly-forecast__time
+
+	&__time {
+	}
+
+	// .hourly-forecast__icon
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+	}
+
+	// .hourly-forecast__temp
+
+	&__temp {
+	}
+
+	// .hourly-forecast__wind
+
+	&__wind-icon {
+		width: 55px;
+		height: 55px;
+	}
+}
+body.dark .hourly-forecast__item {
+	background: var(--item-bg);
+}
+
+body.light .hourly-forecast__item:nth-child(-n + 3) {
+	background: linear-gradient(171deg, #f88508 -12.41%, rgba(246, 250, 217, 0) 163.32%);
+}
+
+body.light .hourly-forecast__item:nth-child(n + 4) {
+	background: linear-gradient(168deg, #443d64 -19.21%, rgba(101, 130, 198, 0) 158.48%);
+}

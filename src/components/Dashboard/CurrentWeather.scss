@@ -1,0 +1,132 @@
+.weather {
+	color: var(--text);
+	max-width: 780px;
+	width: 100%;
+	border-radius: 30px;
+	background: var(--card-bg);
+	box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+	padding-block: 50px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	@media (max-width: 1270px) {
+		max-width: 100%;
+	}
+	&__wrapper {
+		min-width: 700px;
+		width: 100%;
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+		display: flex;
+		padding-inline: 20px;
+		justify-content: space-between;
+		gap: 15px;
+	}
+	&__left-wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 26px;
+		flex: 1 1 150px;
+	}
+}
+.temperature {
+	&__current {
+		font-size: 80px;
+		font-weight: 700;
+		background: var(--gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@media (max-width: 800px) {
+			font-size: 50px;
+		}
+		@media (max-width: 767.98px) {
+			font-size: 40px;
+		}
+	}
+	&__feeling {
+		font-size: 20px;
+		font-weight: 600;
+		text-wrap: nowrap;
+		@media (max-width: 767.98px) {
+			font-size: 18px;
+		}
+		span {
+			font-size: 32px;
+			font-weight: 700;
+			@media (max-width: 767.98px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.condition-weather {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	flex: 1 1 200px;
+
+	figcaption {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 600;
+	}
+	&__icon {
+		width: 200px;
+		height: 200px;
+		@media (max-width: 900px) {
+			width: 120px;
+			height: 120px;
+		}
+	}
+}
+.sun-info {
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	&__details {
+		display: grid;
+		gap: 10px;
+		font-weight: 600;
+		&__title {
+			font-size: 20px;
+		}
+	}
+}
+
+.weather__items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	flex: 1 1 150px;
+}
+.item-weather {
+	font-size: 20px;
+	font-weight: 600;
+	&__info {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	&__icon {
+		width: 50px;
+		height: 50px;
+		@media (max-width: 767.98px) {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	&__label {
+		text-wrap: nowrap;
+	}
+}

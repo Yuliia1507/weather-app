@@ -1,0 +1,72 @@
+.daily-forecast {
+	max-width: 415px;
+	width: 100%;
+	box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	background: var(--card-bg);
+	padding: 30px 15px;
+	color: var(--text);
+	@media (max-width: 1270px) {
+		max-width: 100%;
+	}
+
+	// .daily-forecast__title
+
+	&__title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		@media (max-width: 400px) {
+			font-size: 25px;
+		}
+	}
+
+	// .daily-forecast__wrapper
+
+	&__wrapper {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		overflow-x: auto;
+		padding-bottom: 10px;
+		width: 100%;
+		scroll-snap-type: x mandatory;
+		margin-inline: auto;
+	}
+
+	// .daily-forecast__item
+
+	&__item {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+		font-weight: 700;
+		min-width: 380px;
+	}
+
+	// .daily-forecast__icon
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		flex: 0 1 60px;
+	}
+
+	// .daily-forecast__temp
+
+	&__temp {
+		text-wrap: nowrap;
+		font-size: 24px;
+		flex: 1;
+	}
+
+	// .daily-forecast__date
+
+	&__date {
+		text-wrap: nowrap;
+		font-size: 20px;
+	}
+}

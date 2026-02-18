@@ -1,0 +1,36 @@
+.location-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  background-color: #4cbb17;
+  padding: 15px 28px;
+  border-radius: 40px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  font-size: 22px;
+  font-weight: 800;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 767.98px) {
+  .location-btn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .location-btn {
+    width: 100%;
+  }
+}
+.location-btn svg {
+  color: #000;
+}
+
+.location-btn:hover {
+  background-color: #54ff05;
+}

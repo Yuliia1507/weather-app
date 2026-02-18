@@ -1,0 +1,49 @@
+.info-card {
+	border-radius: 30px;
+	background: var(--card-bg);
+	box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+	max-width: 510px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-block-start: 53px;
+	padding-block-end: 48px;
+	padding-inline: 20px;
+	color: var(--text);
+	@media (max-width: 1270px) {
+		max-width: 100%;
+	}
+
+	&__city {
+		font-size: 36px;
+		font-weight: 700;
+		text-align: center;
+		&:not(:last-child){
+			margin-bottom: 30px;
+		}
+		@media (max-width: 900px) {
+			font-size: 26px;
+		}
+	
+	}
+	&__time {
+		text-wrap: nowrap;
+		font-size: 96px;
+		font-weight: 700;
+		&:not(:last-child){
+			margin-bottom: 10px;
+		}
+		@media (max-width: 1000px) {
+			font-size: 36px;
+		}
+	}
+	&__date {
+		font-size: 20px;
+		@media (max-width: 900px) {
+			font-size: 18px;
+		}
+	}
+}
+

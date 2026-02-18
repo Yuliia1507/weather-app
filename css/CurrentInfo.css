@@ -1,0 +1,66 @@
+.info-card {
+  border-radius: 30px;
+  background: var(--card-bg);
+  -webkit-box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.5);
+  max-width: 510px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-before: 53px;
+          padding-block-start: 53px;
+  -webkit-padding-after: 48px;
+          padding-block-end: 48px;
+  padding-inline: 20px;
+  color: var(--text);
+}
+@media (max-width: 1270px) {
+  .info-card {
+    max-width: 100%;
+  }
+}
+.info-card__city {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.info-card__city:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+  .info-card__city {
+    font-size: 26px;
+  }
+}
+.info-card__time {
+  text-wrap: nowrap;
+  font-size: 96px;
+  font-weight: 700;
+}
+.info-card__time:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .info-card__time {
+    font-size: 36px;
+  }
+}
+.info-card__date {
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .info-card__date {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,43 @@
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #1e1e1e;
+	
+}
+body.dark {
+	--bg: #111;
+	--border-color: transparent;
+	--card-bg: #444;
+	--text: #fff;
+	--app-bg: linear-gradient(110deg, #383838 0%, rgba(158, 158, 158, 0.00) 71.82%);;
+	--gradient: linear-gradient(84deg, #fff -16.56%, rgba(255, 255, 255, 0) 118.43%);
+	--item-bg: #373636;
+}
+
+body.light {
+	--border-color: #000;
+	--bg: #70777b;
+	--card-bg: #d9d9d9;
+	--text: #292929;
+	--app-bg: linear-gradient(113deg, #fff 0.28%, rgba(70, 97, 115, 0) 178.65%);
+	--gradient: linear-gradient(80deg, #292929 -2.93%, rgba(255, 255, 255, 0) 212.44%);
+}
+
+#root {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	padding-block: 50px ;
+	width: 100%;
+}
+.app {
+	padding: 63px 80px;
+	max-width: 1512px;
+	width: 100%;
+	margin-inline: auto;
+	background: var(--app-bg);
+	@media (max-width: 1400px) {
+		padding: 15px;
+	}
+
+}
