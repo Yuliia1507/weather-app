@@ -65,7 +65,7 @@ function App() {
 						error.message
 					);
 
-					
+
 
 					setError(
 						"Cannot access your location."
@@ -217,12 +217,20 @@ function App() {
 			const now = new Date();
 
 			setCurrentTime(
-				now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false })
+				now.toLocaleTimeString([], {
+					hour: "2-digit",
+					minute: "2-digit",
+					hour12: false
+				})
 			);
 
-			setCurrentDate(
-				now.toLocaleDateString([], { weekday: "long", day: "numeric", month: "short" })
-			);
+			const date = now.toLocaleDateString("en-GB", {
+				weekday: "long",
+				day: "numeric",
+				month: "short",
+			});
+
+			setCurrentDate(date.replace(" ", ", "));
 
 		}, 1000);
 

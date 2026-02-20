@@ -25,6 +25,9 @@
 @media (max-width: 400px) {
   .location-btn {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .location-btn svg {
